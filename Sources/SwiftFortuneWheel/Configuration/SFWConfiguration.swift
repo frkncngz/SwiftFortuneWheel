@@ -132,6 +132,9 @@ public extension SFWConfiguration {
         /// Background image content mode
         public var backgroundImageContentMode: ContentMode = .scaleAspectFill
         
+        /// Background image vertical offset
+        public var backgroundImageVerticalOffset: CGFloat = 0.0
+        
         /// Initiates a slice preferences
         /// - Parameters:
         ///   - backgroundColorType: Background color type

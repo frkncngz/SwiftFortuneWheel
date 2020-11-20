@@ -72,6 +72,7 @@ extension SliceDrawing {
         
         // Draws slice content
         slice.contents.enumerated().forEach { (contentIndex, element) in
+            topOffset = 0
             switch element {
             case .text(let text, let preferences):
                 topOffset += prepareDraw(text: text,
@@ -198,9 +199,9 @@ extension SliceDrawing {
         
         let aspectFillSize = CGSize.aspectFill(aspectRatio: backgroundImage.size, minimumSize: CGSize(width: radius, height: circularSegmentHeight))
         
-        let position = CGPoint(x: -aspectFillSize.width / 2, y: -aspectFillSize.height)
+        let position = CGPoint(x: -aspectFillSize.width / 2, y: -aspectFillSize.height - (preferences?.slicePreferences.backgroundImageVerticalOffset ?? 0.0))
         let rectangle = CGRect(x: position.x, y: position.y, width: aspectFillSize.width, height: aspectFillSize.height)
-        
+                
         switch preferences?.slicePreferences.backgroundImageContentMode {
         case .some(.bottom):
             #if os(macOS)
