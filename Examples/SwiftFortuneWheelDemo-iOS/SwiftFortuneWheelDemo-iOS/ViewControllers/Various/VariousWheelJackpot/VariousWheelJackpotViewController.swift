@@ -24,6 +24,10 @@ class VariousWheelJackpotViewController: UIViewController {
             wheelControl.spinImage = "redCenterImage"
             wheelControl.pinImage = "redArrow"
             wheelControl.isSpinEnabled = false
+            
+            wheelControl.pinImageViewCollisionEffect = CollisionEffect(force: 15, angle: 30)
+            
+            wheelControl.edgeCollisionDetectionOn = true
         }
     }
     
@@ -79,7 +83,7 @@ class VariousWheelJackpotViewController: UIViewController {
     }
     
     @IBAction func rotateTap(_ sender: Any) {
-        wheelControl.startAnimating(indefiniteRotationTimeInSeconds: 1, finishIndex: finishIndex) { (finished) in
+        wheelControl.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
             print(finished)
         }
     }

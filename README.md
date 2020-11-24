@@ -2,6 +2,7 @@
 
 <img src="./Images/header.png" width="400" alt="SwiftFortuneWheel"/>
 
+[![CI Status](https://img.shields.io/travis/sh-khashimov/SwiftFortuneWheel.svg?style=flat)](https://travis-ci.org/sh-khashimov/SwiftFortuneWheel)
 [![Swift Version](https://img.shields.io/badge/Swift-5-orange.svg)]()
 [![Version](https://img.shields.io/cocoapods/v/SwiftFortuneWheel.svg?label=version)](https://cocoapods.org/pods/SwiftFortuneWheel)
 ![Support](https://img.shields.io/badge/supports-SPM%2C%20CocoaPods-green.svg)
@@ -17,9 +18,10 @@ The ultimate spinning wheel control that supports dynamic content and rich custo
 | 🎇 | Supports background Image for each Slice (sector) |
 | 🧮 | Supports vertical and horizontal text orientation |
 | 🌈 | Appearance customization |
-| 🔋 | High performance, low memory usage |
+| 🔊 | Sounds and haptic feedback |
+| 🌋 | Collision callbacks and effects |
 | 🎨 | Drawn and animated using CoreGraphics, CoreAnimations |
-| 🚀 | Written in Swift |
+| 🔋 | High performance, low memory usage |
 
 ### Layout Preview
 
@@ -35,11 +37,17 @@ The ultimate spinning wheel control that supports dynamic content and rich custo
 
 > _Taken from [example projects](/Examples)_
 
+### Collision Effect Preview
+
+<img src="./Images/collision_01.gif" width="250"/><img src="./Images/collision_02.gif" width="235"/>
+
+> _Taken from [example projects](/Examples)_
+
 ## Screenshots
 
 <details>
   <summary>from iOS Example Project</summary>
-<img src="./Images/screenshots/1.png" width="250"/><img src="./Images/screenshots/2.png" width="250"/><img src="./Images/screenshots/3.png" width="250"/><img src="./Images/screenshots/4.png" width="250"/><img src="./Images/screenshots/5.png" width="250"/><img src="./Images/screenshots/6.png" width="250"/><img src="./Images/screenshots/7.png" width="250"/>
+<img src="./Images/screenshots/1.png" width="250"/><img src="./Images/screenshots/2.png" width="250"/><img src="./Images/screenshots/3.png" width="250"/><img src="./Images/screenshots/8.png" width="250"/><img src="./Images/screenshots/9.png" width="250"/><img src="./Images/screenshots/4.png" width="250"/><img src="./Images/screenshots/5.png" width="250"/><img src="./Images/screenshots/6.png" width="250"/><img src="./Images/screenshots/7.png" width="250"/>
 </details>
 
 - - -
@@ -63,6 +71,8 @@ The ultimate spinning wheel control that supports dynamic content and rich custo
 - [**API Overview**](/Documentation/API_Overview.md)
 - [**Configuration In-Depth**](/Documentation/Configuration_indepth.md)
 - [**About Slice and Slice’s contents**](/Documentation/About_Slice_and_Slice_contents.md)
+- [**Sound Effects and Impact Feedback**](/Documentation/sound_effects.md)
+- [**pinImageView Collision effect and Collision Callbacks**](/Documentation/collision.md)
 - [**About Port to Other Platforms**](/Documentation/Port_to_Other_Platforms.md)
 - [**Example Projects**](/Examples)
 ## Installation
@@ -91,8 +101,11 @@ Please make sure to update tests as appropriate.
 
 ## Migration
 
+- [**from 1.1.x to 1.2.x**](/Documentation/Migrations/Migration_1.1.x_to_1.2.x.md)
 - [**from 1.0.x to 1.1.x**](/Documentation/Migrations/Migration_1_to_1.x.md)
 - [**from 0.x.x to 1.0.0**](/Documentation/Migrations/Migration_0_to_1.md)
+
+
 
 ## Changelog
 

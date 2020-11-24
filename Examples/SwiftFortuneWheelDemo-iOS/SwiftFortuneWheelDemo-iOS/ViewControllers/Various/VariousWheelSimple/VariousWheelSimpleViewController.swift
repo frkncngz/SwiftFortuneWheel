@@ -24,6 +24,10 @@ class VariousWheelSimpleViewController: UIViewController {
             wheelControl.configuration = .variousWheelSimpleConfiguration
             wheelControl.slices = slices
             wheelControl.pinImage = "whitePinArrow"
+            
+            wheelControl.pinImageViewCollisionEffect = CollisionEffect(force: 8, angle: 20)
+            
+            wheelControl.edgeCollisionDetectionOn = true
         }
     }
     
@@ -48,7 +52,7 @@ class VariousWheelSimpleViewController: UIViewController {
     }
     
     @IBAction func rotateTap(_ sender: Any) {
-        wheelControl.startAnimating(indefiniteRotationTimeInSeconds: 1, finishIndex: finishIndex) { (finished) in
+        wheelControl.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
             print(finished)
         }
     }
