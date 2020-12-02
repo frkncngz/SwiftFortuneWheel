@@ -13,7 +13,7 @@ import UIKit
 #endif
 
 /// Wheel view with slices.
-class WheelView: UIView {
+public class WheelView: UIView {
 
     /// Wheel layer
     private(set) var wheelLayer: WheelLayer?

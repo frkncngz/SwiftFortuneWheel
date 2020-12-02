@@ -58,7 +58,7 @@ public class SwiftFortuneWheel: SFWControl {
     #endif
     
     /// Wheel view
-    private var wheelView: WheelView?
+    public var wheelView: WheelView?
     
     /// Pin image view
     private var pinImageView: PinImageView?
