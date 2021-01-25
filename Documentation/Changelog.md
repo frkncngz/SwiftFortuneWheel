@@ -1,5 +1,16 @@
 ## CHANGELOG
 
+### 1.3.3
+- Fixed issue when tap to slice can return incorrect slice index;
+- Tap gesture recognizer ported to macOS;
+
+### 1.3.2
+- [Issue #10](https://github.com/sh-khashimov/SwiftFortuneWheel/issues/10) added tap gesture API to detect selected slice index via tap. For more information see [**API Overview**](API_Overview.md);
+- Refactoring;
+
+### 1.3.1
+- [Issue #11](https://github.com/sh-khashimov/SwiftFortuneWheel/issues/11): startRotationAnimation completion issue fix;
+
 ### 1.3.0
 - [Issue #6](https://github.com/sh-khashimov/SwiftFortuneWheel/issues/6): `pinImageView` collision effect animation added;
 
